@@ -1,0 +1,19 @@
+@import './../base/mixins';
+@import './../base/variables';
+#navi {
+  height: 96px;
+  border-bottom-width: 2px;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-right: 124px;
+  padding-bottom: 32px;
+  padding-left: 124px;
+}
+.navi_link {
+  @include navi;
+  font-weight: $font_weight_400;
+}
+.navi_name {
+  @include navi;
+  font-weight: $font_weight_700;
+}

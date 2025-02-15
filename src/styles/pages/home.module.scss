@@ -1,0 +1,21 @@
+@import './../base/mixins.scss';
+@import './../base/variables';
+.home_main {
+  max-width: 884;
+  height: 192;
+  top: 260px;
+  left: 124px;
+  position: absolute;
+
+  & .home_section_about_me {
+    & p {
+      @include home_about;
+      font-weight: $font_weight_400;
+      white-space: pre-line;
+    }
+    & span {
+      @include home_about;
+      font-weight: $font_weight_700;
+    }
+  }
+}
