@@ -4,8 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import styles from './../styles/components/navi.module.scss';
 const Navi: React.FC = () => {
   return (
+    
     <Navbar expand="lg" className="bg-body-tertiary" id={styles.navi}>
-      <Container>
+      <Container className={styles.container}>
         <Navbar.Brand href="#home" className={styles.navi_name}>
           Sviatlana Kapusta
         </Navbar.Brand>
@@ -14,7 +15,6 @@ const Navi: React.FC = () => {
           id="basic-navbar-nav"
           className="justify-content-end"
           style={{
-            marginRight: 124,
             padding: 0,
           }}
         >

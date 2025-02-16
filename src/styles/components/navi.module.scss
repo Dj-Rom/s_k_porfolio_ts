@@ -1,13 +1,17 @@
 @import './../base/mixins';
 @import './../base/variables';
+
 #navi {
+  width: 1440px;
   height: 96px;
+  margin: 0 124px 0 124px;
   border-bottom-width: 2px;
-  justify-content: space-between;
   padding-top: 32px;
-  padding-right: 124px;
   padding-bottom: 32px;
-  padding-left: 124px;
+  background-color: unset !important;
+  & .container {
+    padding: 0;
+  }
 }
 .navi_link {
   @include navi;
@@ -16,4 +20,20 @@
 .navi_name {
   @include navi;
   font-weight: $font_weight_700;
+}
+
+@media (min-width: 992px) {
+  #navi .container {
+    max-width: calc(1440px - (124px * 2)) !important;
+  }
+}
+@media (max-width: 992px) {
+  #navi .container {
+    max-width: calc(100vw - (124px * 2)) !important;
+  }
+}
+@media (max-width: 492px) {
+  #navi .container {
+    max-width: calc(100vw - (4px * 2)) !important;
+  }
 }

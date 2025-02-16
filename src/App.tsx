@@ -3,13 +3,15 @@ import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
-import './App.css';
+import styles from './App.module.scss';
 import Navi from './components/Navi';
 
 const App: React.FC = () => {
   return (
     <HashRouter>
-      <Navi />
+      <nav className={styles.nav}>
+        <Navi />
+      </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

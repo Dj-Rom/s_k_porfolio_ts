@@ -11,3 +11,9 @@
   letter-spacing: 0%;
   color: $text_color_grey;
 }
+
+@mixin project {
+  font-size: 24px;
+  line-height: 29.05px;
+  letter-spacing: 0%;
+}

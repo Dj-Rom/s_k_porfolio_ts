@@ -1,13 +1,14 @@
 @import './../base/mixins.scss';
 @import './../base/variables';
 .home_main {
-  max-width: 884;
-  height: 192;
-  top: 260px;
-  left: 124px;
+  height: 192px;
+  top: calc(260px - 96px); // h-navi
+  left: 50%;
   position: absolute;
+  transform: translate(-50%);
 
   & .home_section_about_me {
+    position: absolute;
     & p {
       @include home_about;
       font-weight: $font_weight_400;
@@ -17,5 +18,67 @@
       @include home_about;
       font-weight: $font_weight_700;
     }
+  }
+}
+
+.main_projects_view {
+  position: relative;
+  max-width: 1192px;
+  height: 1558px;
+  top: calc(640px - 96px - 48px - 192px); // h-navi
+  gap: 48px;
+  & .main_project_info {
+    margin-top: 24px;
+    width: 199px;
+    height: 29px;
+    & p {
+      @include project;
+      font-weight: $font_weight_400;
+    }
+  }
+}
+.other_projects_view {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.socialMedia {
+  position: absolute;
+  width: 192px;
+  height: 48px;
+  top: calc(500px - 96px - 192px); // h-navi
+  gap: 24px;
+  & ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    & li {
+      width: 48px;
+      height: 48px;
+      gap: 10px;
+      border-radius: 90px;
+      & a svg {
+        width: 24px;
+        height: 24px;
+        color: $text_color_grey;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .home_main {
+    margin-left: 124px;
+    max-width: calc(1440px - (124px * 2)) !important;
+  }
+}
+@media (max-width: 992px) {
+  .home_main {
+    max-width: calc(100vw - (124px * 2)) !important;
+  }
+}
+@media (max-width: 492px) {
+  .home_main {
+    max-width: calc(100vw - (4px * 2)) !important;
   }
 }

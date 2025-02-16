@@ -1,0 +1,11 @@
+@import './styles/base/variables';
+body {
+  position: relative;
+}
+.nav {
+  border-bottom: 2px solid $navi_border_color;
+  width: 100vw;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+}
