@@ -1,5 +1,6 @@
 {
   "name": "s_kapusta_portfolio",
+  "homepage": "https://dj-rom.github.io/s_k_porfolio_ts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,9 +24,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass": "^1.85.0"
   }
 }
