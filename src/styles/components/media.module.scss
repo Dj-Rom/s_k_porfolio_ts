@@ -1,0 +1,39 @@
+@import './../base/variables';
+.socialMedia {
+  position: absolute;
+  width: 192px;
+  height: 48px;
+  gap: 24px;
+  & ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    li :hover {
+      width: 48px;
+
+      height: 48px;
+      margin-top: -9px;
+      text-align: center;
+      padding: 9px 0;
+
+      border-radius: 90px;
+      background-color: greenyellow;
+    }
+    & li {
+      width: 48px;
+      margin-right: 24px;
+      margin-top: 24px;
+      height: 48px;
+      text-align: center;
+      padding: 9px 0;
+      background-color: var(--Colour-Grey-100, #f2f4f7);
+      border-radius: 90px;
+
+      & a svg {
+        width: 48px;
+        height: 24px;
+        color: $text_color_grey;
+      }
+    }
+  }
+}

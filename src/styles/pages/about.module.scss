@@ -1,0 +1,29 @@
+@import './../base/variables';
+@import './../base/mixins';
+.about_section {
+  width: 1192px;
+  height: 192px;
+  top: calc(150px);
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  h1 {
+    display: block;
+    width: 889;
+    height: 58;
+    top: 60px;
+    left: 124px;
+    @include home_about;
+    color: $text_color_black;
+  }
+  & .about_text {
+    margin-top: 52px;
+    margin-bottom: 40px;
+    width: 1038px;
+    & p {
+      @include about;
+      font-weight: $font_weight_400;
+      margin-bottom: 25px;
+    }
+  }
+}

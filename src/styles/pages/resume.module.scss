@@ -1,0 +1,44 @@
+@import './../base/mixins';
+.resume_section {
+  width: 1192px;
+  height: 192px;
+  top: calc(160px);
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+}
+.resume_top {
+  display: flex;
+  justify-content: space-between;
+}
+.resume_top_left {
+  max-width: 320px;
+
+  & h3 {
+    margin-bottom: 380px;
+  }
+}
+.resume_top_right {
+  width: 872px;
+  padding-left: 154px;
+  margin-top: 67px;
+  button {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 3px;
+    opacity: 0.7;
+  }
+  button:hover {
+    background-color: greenyellow;
+  }
+  h1 {
+    @include resume_h2;
+    span {
+      opacity: (0.48);
+    }
+  }
+  p,
+  h6 {
+    @include resume_p_h6;
+  }
+}

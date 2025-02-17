@@ -1,6 +1,17 @@
 @import './../base/variables';
 .main_img {
   margin-top: '24px';
-  display: 'block';
+  display: block;
   border-radius: $borderRadius;
+}
+.about_img {
+  margin-top: 55px;
+  display: block;
+  border-radius: $borderRadius;
+}
+.resume_img {
+  display: block;
+  margin-top: 61px;
+  border-radius: $borderRadius;
+  margin-bottom: 120px;
 }

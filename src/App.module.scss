@@ -1,6 +1,7 @@
 @import './styles/base/variables';
 body {
   position: relative;
+  overflow-x: hidden;
 }
 .nav {
   border-bottom: 2px solid $navi_border_color;

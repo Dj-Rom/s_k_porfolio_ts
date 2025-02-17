@@ -12,9 +12,9 @@ const Home: React.FC = () => (
          user-friendly mobile apps.`}
       </p>
     </section>
-    <div className={styles.socialMedia}>
-      <Media />
-    </div>
+
+    <Media top={212} />
+
     <section className={styles.main_projects_view}>
       <Img
         urlImg=""

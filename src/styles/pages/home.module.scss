@@ -1,8 +1,9 @@
 @import './../base/mixins.scss';
 @import './../base/variables';
 .home_main {
+  width: 1192px;
   height: 192px;
-  top: calc(260px - 96px); // h-navi
+  top: calc(260px); // h-navi
   left: 50%;
   position: absolute;
   transform: translate(-50%);
@@ -25,7 +26,7 @@
   position: relative;
   max-width: 1192px;
   height: 1558px;
-  top: calc(640px - 96px - 48px - 192px); // h-navi
+  top: calc(500px + 48px + 92px - 96px - 192px); // h-navi
   gap: 48px;
   & .main_project_info {
     margin-top: 24px;
@@ -40,30 +41,7 @@
 .other_projects_view {
   display: flex;
   justify-content: space-between;
-  margin-top: 48px;
-}
-.socialMedia {
-  position: absolute;
-  width: 192px;
-  height: 48px;
-  top: calc(500px - 96px - 192px); // h-navi
-  gap: 24px;
-  & ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    & li {
-      width: 48px;
-      height: 48px;
-      gap: 10px;
-      border-radius: 90px;
-      & a svg {
-        width: 24px;
-        height: 24px;
-        color: $text_color_grey;
-      }
-    }
-  }
+  margin-top: 87px;
 }
 
 @media (max-width: 1440px) {
