@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Navi: React.FC = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary" id={styles.navi}>
-      <Container className={styles.container}>
+      <Container className="container-xxl" style={{ maxWidth: '100vw' }}>
         <Navbar.Brand className={styles.navi_name}>
           <Link to="/">Sviatlana Kapusta</Link>
         </Navbar.Brand>

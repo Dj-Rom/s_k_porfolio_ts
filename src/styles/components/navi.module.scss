@@ -22,11 +22,12 @@
   font-weight: $font_weight_700;
 }
 
-@media (min-width: 992px) {
-  #navi .container {
-    max-width: calc(1440px - (124px * 2)) !important;
+@media (max-width: 1200px) {
+  #navi #container_navi {
+    max-width: calc(100vw - (124px * 2)) !important;
   }
 }
+
 @media (max-width: 992px) {
   #navi .container {
     max-width: calc(100vw - (124px * 2)) !important;

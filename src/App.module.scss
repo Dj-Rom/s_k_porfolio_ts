@@ -2,11 +2,18 @@
 body {
   position: relative;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 .nav {
   border-bottom: 2px solid $navi_border_color;
-  width: 100vw;
+  width: 1440px;
   height: 96px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  body {
+    display: block;
+  }
 }

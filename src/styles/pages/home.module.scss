@@ -4,9 +4,9 @@
   width: 1192px;
   height: 192px;
   top: calc(260px); // h-navi
-  left: 50%;
+  margin-left: 124px;
   position: absolute;
-  transform: translate(-50%);
+  // transform: translate(-50%);
 
   & .home_section_about_me {
     position: absolute;
@@ -50,13 +50,18 @@
     max-width: calc(1440px - (124px * 2)) !important;
   }
 }
+
 @media (max-width: 992px) {
   .home_main {
     max-width: calc(100vw - (124px * 2)) !important;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 500px) {
   .home_main {
-    max-width: calc(100vw - (4px * 2)) !important;
+    max-width: 100% !important;
   }
+  .main_projects_view {
+    top: 700px;
+  }
+
 }
